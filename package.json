@@ -1,0 +1,28 @@
+{
+  "name": "exploring-pact-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "rimraf pacts && mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manit815/exploring-pact-testing.git"
+  },
+  "author": "Manit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manit815/exploring-pact-testing/issues"
+  },
+  "homepage": "https://github.com/manit815/exploring-pact-testing#readme",
+  "devDependencies": {
+    "@pact-foundation/pact": "^9.2.2",
+    "axios": "^0.19.0",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^5.1.1",
+    "path": "^0.12.7",
+    "rimraf": "^2.6.2"
+  }
+}

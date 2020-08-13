@@ -1,0 +1,115 @@
+I, [2020-08-13T20:20:33.488433 #24792]  INFO -- : Registered expected interaction GET /dogs
+D, [2020-08-13T20:20:33.488692 #24792] DEBUG -- : {
+  "description": "a request for all dogs",
+  "providerState": "i have a list of dogs",
+  "request": {
+    "method": "GET",
+    "path": "/dogs",
+    "headers": {
+      "Accept": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": [
+      {
+        "dog": 1
+      },
+      {
+        "dog": 2
+      }
+    ]
+  },
+  "metadata": null
+}
+I, [2020-08-13T20:20:33.497210 #24792]  INFO -- : Received request GET /dogs
+D, [2020-08-13T20:20:33.497332 #24792] DEBUG -- : {
+  "path": "/dogs",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Accept": "application/json",
+    "User-Agent": "axios/0.19.2",
+    "Host": "localhost:8992",
+    "Connection": "close",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2020-08-13T20:20:33.497560 #24792]  INFO -- : Found matching response for GET /dogs
+D, [2020-08-13T20:20:33.497618 #24792] DEBUG -- : {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": [
+    {
+      "dog": 1
+    },
+    {
+      "dog": 2
+    }
+  ]
+}
+I, [2020-08-13T20:20:33.503139 #24792]  INFO -- : Verifying - interactions matched
+I, [2020-08-13T20:20:33.506337 #24792]  INFO -- : Cleared interactions
+I, [2020-08-13T20:20:33.510266 #24792]  INFO -- : Registered expected interaction GET /dogs/1
+D, [2020-08-13T20:20:33.510409 #24792] DEBUG -- : {
+  "description": "a request for a single dog",
+  "providerState": "i have a list of dogs",
+  "request": {
+    "method": "GET",
+    "path": "/dogs/1",
+    "headers": {
+      "Accept": "application/json"
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "body": [
+      {
+        "dog": 1
+      },
+      {
+        "dog": 2
+      }
+    ]
+  },
+  "metadata": null
+}
+I, [2020-08-13T20:20:33.514252 #24792]  INFO -- : Received request GET /dogs/1
+D, [2020-08-13T20:20:33.514348 #24792] DEBUG -- : {
+  "path": "/dogs/1",
+  "query": "",
+  "method": "get",
+  "headers": {
+    "Accept": "application/json",
+    "User-Agent": "axios/0.19.2",
+    "Host": "localhost:8992",
+    "Connection": "close",
+    "Version": "HTTP/1.1"
+  }
+}
+I, [2020-08-13T20:20:33.514500 #24792]  INFO -- : Found matching response for GET /dogs/1
+D, [2020-08-13T20:20:33.514618 #24792] DEBUG -- : {
+  "status": 200,
+  "headers": {
+    "Content-Type": "application/json"
+  },
+  "body": [
+    {
+      "dog": 1
+    },
+    {
+      "dog": 2
+    }
+  ]
+}
+I, [2020-08-13T20:20:33.520440 #24792]  INFO -- : Verifying - interactions matched
+I, [2020-08-13T20:20:33.523408 #24792]  INFO -- : Cleared interactions
+I, [2020-08-13T20:20:33.527041 #24792]  INFO -- : Merging interactions into pact for MyProvider at /Users/manit/github/exploring-pact-testing/pacts/myconsumer-myprovider.json
